@@ -14,7 +14,7 @@
             <Label Text="Distância: "/>
             <Entry x:Name="txt_distancia" Margin="0,10,0,10"/>
 
-            <Label Text="Rendimento: "/>
+            <Label Text="Rendimento(km/l): "/>
             <Entry x:Name="txt_rendimento" Margin="0,10,0,10"/>
 
             <Label Text="Preço Combustível: "/>

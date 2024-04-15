@@ -7,13 +7,28 @@
         <StackLayout>
             <ListView x:Name="lst_pedagios">
                 <ListView.Header>
+                    <Grid ColumnDefinitions="2*, *">
+                        <Label Grid.Column="0" Text="Local"/>
+                        <Label Grid.Column="1" Text="Valor"/>
+                    </Grid>
                     
                 </ListView.Header>
 
                 <ListView.ItemTemplate>
-                    
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid RowDefinitions="Auto" ColumnDefinitions="2*, *">
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Local}"/>
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Valor}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+
                 </ListView.ItemTemplate>
             </ListView>
+
+            <Button Text="Somar" Clicked="Button_Clicked"/>
+            <Button Text="Add Novo" Clicked="Button_Clicked_1"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

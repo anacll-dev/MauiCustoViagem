@@ -11,7 +11,7 @@
             <Label Text="Valor: "/>
             <Entry x:Name="txt_Valor" Margin="0,10,0,10"/>
 
-            <Button Text="Salvar" Margin="0,10,0,10"/>
+            <Button Text="Salvar" Margin="0,10,0,10" Clicked="Button_Clicked"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>
