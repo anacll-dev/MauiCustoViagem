@@ -27,8 +27,6 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <Button Text="Somar" Clicked="Button_Clicked"/>
-            <Button Text="Add Novo" Clicked="Button_Clicked_1"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>
