@@ -19,6 +19,7 @@ namespace MauiCustoViagem.Helpers
             _conn.CreateTableAsync<Pedagio>().Wait();
         }
 
+
         public Task<int> Insert(Pedagio p)
         {
             return _conn.InsertAsync(p);
